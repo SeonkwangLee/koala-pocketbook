@@ -138,6 +138,7 @@ svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke
 
 .hint{position:fixed;top:14px;left:0;right:0;text-align:center;color:rgba(214,214,214,.5);font:400 11px/1 var(--body);letter-spacing:.06em;pointer-events:none;transition:opacity 1s}
 @media (max-width:760px){.hint{display:none}.bar .hide-m{display:none}}
+@media (max-width:760px){.stage{padding-left:max(3px,env(safe-area-inset-left,0px));padding-right:max(3px,env(safe-area-inset-right,0px))}}
 @media (max-height:520px){.hint{display:none}.bar{padding:6px 0 8px}.book{width:min(1180px,100%,calc((100svh - 64px) * 1.5))}.single{width:min(100%,calc((100svh - 64px) * .75))}}
 .bar #mode{display:none}
 @media (max-width:760px), (max-height:520px){.bar #mode{display:grid}}
