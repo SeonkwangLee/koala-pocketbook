@@ -276,7 +276,7 @@ function makeFace(idx, side){
 }
 
 function build(){
-  const m = pref || (isMobile() ? "single" : "spread");
+  const m = pref || "spread";
   if(m === mode) return;
   // carry position across modes
   if(mode === "spread") single = Math.max(0, Math.min(N-1, sheet*2 - 1 < 0 ? 0 : sheet*2 - 1));
